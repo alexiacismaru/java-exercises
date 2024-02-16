@@ -1,0 +1,35 @@
+package be.kdg.prog1.a802;
+
+public abstract class Shape implements Printable, Comparable {
+    private int x;
+    private int y;
+
+    public Shape(int x, int y) {
+        setPosition(x, y);
+    }
+
+    public void setPosition(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public abstract double getArea();
+
+    public abstract double getPerimeter();
+}
